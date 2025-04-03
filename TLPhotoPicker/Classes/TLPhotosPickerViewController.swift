@@ -126,9 +126,9 @@ public enum PopupConfigure {
 public struct Platform {
     public static var isSimulator: Bool {
 #if targetEnvironment(simulator)
-        return 1
+        return true
 #else
-        return 0
+        return false
 #endif
     }
 }
